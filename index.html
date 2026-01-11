@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title></title>JOGO MEU PORRAAAAAAAA , ACERTE O CODIGO. ATIVA O SOM FDP
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- INTRO -->
+<div id="intro" class="intro">
+  <pre id="introText"></pre>
+</div>
+<audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<button id="btn-musica" onclick="toggleMusica()">🔇 Música</button>
+<!-- SCAN BAR -->
+<div class="scan-bar">
+  <div id="scanProgress"></div>
+</div>
+
+<!-- JOGO -->
+<div class="terminal hidden" id="telaJogo">
+  <h1>JOGO DO GB , ACERTE O CODIGO .</h1>
+<div class="jogo-container">
+    
+    <img src="foto3.jpg" alt="Imagem do jogo" class="img-jogo">
+
+    <!-- aqui fica o conteúdo do jogo -->
+</div>
+  <div class="info">
+    <span>NÍVEL: <b id="level">1</b></span>
+    <span>TEMPO: <b id="time">25</b>s</span>
+  </div>
+  <div class="barra">
+    <div id="progress"></div>
+  </div>
+
+  <div id="status">INICIALIZANDO..., CALMA POHA</div>
+
+  <div class="codes" id="codes"></div>
+</div>
+
+<!-- SCAN -->
+<div class="terminal hidden" id="telaScan">
+  <h1>PROCESSANDO...</h1>
+  <p class="scan-text" id="scanText"></p>
+</div>
+
+<script src="script.js"></script>
+</body> 
+
+<div class="painel-info">
+  <h3>SYSTEM INFO</h3>
+  <p>IP ATUAL: <span>192.168.0.77</span></p>
+  <p>LOCALIZAÇÃO: <span>UNKNOWN</span></p>
+  <p>SEGURANÇA: <span>ATIVA</span></p>
+  <p>STATUS: <span id="sysStatus">ESTÁVEL</span></p>
+</div>
+<div class="galeria-topo"> <img src="foto.jpg" alt="Imagem 1"> <img src="foto2.jpg" alt="Imagem 2"> </div>
+</html>
